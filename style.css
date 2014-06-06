@@ -1,0 +1,44 @@
+/* For demo only */
+body {
+  font-family: sans-serif;
+  color: #aaa;
+  margin: 0 4em;
+}
+iframe { display: block; }
+.scrollable {
+  height: 200px;
+  overflow: scroll;
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+
+/* The real stuff */
+
+.safescroll-container { position: relative; }
+
+.safescroll-button {
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  text-decoration: none;
+  background-color: rgba(0,0,0,.2);
+}
+.safescroll-icon {
+  display: block;
+  width: 30px; height: 30px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  background-color: rgba(20,220,30,.8);
+  border-radius: 3px;
+  transition: all .3s;
+}
+.safescroll-button:hover { background-color: rgba(0,0,0,.1); }
+.safescroll-button:hover .safescroll-icon { transform: scale(2) }
