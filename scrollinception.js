@@ -5,9 +5,14 @@ $.scrollinception = function() {
     $('[data-scrollinception]').wrap(container);
     $('.scrollinception-container').append(scrollbutton);
 
-    $('.scrollinception-button').on('touchstart click', function(event) {
+    $('.scrollinception-button').on('click', function(event) {
       event.preventDefault();
+      var $btn = $(this);
       $(this).hide();
+      $(window).on('scroll', function() {
+          $btn.show();
+          $(this).unbind('scroll');
+      });
     });
 };
 
