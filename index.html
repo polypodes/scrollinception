@@ -9,12 +9,22 @@
 <body>
     <h1>A way to avoid <em>scroll inception</em></h1>
     <p>A scroll inception is that awkward moment when you scroll an embeded scrollable block and not the page.</p>
-    <h2>An iframe with (click to scroll)</h2>
-    <iframe src="http://www.lorempixel.com/800/800" height="200" width="100%" data-scrollinception="true"></iframe>
-    <h2>An iframe without (it scrolls…)</h2>
+    <h2>Like that…</h2>
     <iframe src="http://www.lorempixel.com/800/800" width="100%"></iframe>
-    <h2>Or a scrollable div</h2>
+    <h2>You don’t like… Here is a solution for an <em>iframe</em></h2>
+    <iframe src="http://www.lorempixel.com/800/800" height="200" width="100%" data-scrollinception="true"></iframe>
+
+    <h2>Or a scrollable <em>div</em></h2>
     <div data-scrollinception="true" class="scrollable"><img src="http://www.lorempixel.com/800/800" alt=""/></div>
+
+    <h2>How to use this</h2>
+    <ol>
+        <li>Get jQuery, or use a <abbr title="Content Delivery Network">CDN</abbr>, like <a href="http://www.jsdelivr.com">jsDelivr</a></li>
+        <li>Get <a href="https://github.com/gaetanark/scrollinception">the jQuery plugin</a>;</li>
+        <li>Add these to your page;</li>
+        <li>Any element using <code>data-scrollinception="true"</code> will use the plugin. <br> (<abbr title="Example">Ex.</abbr> <code>&lt;iframe src="//lorem.com" … data-scrollinception="true"&gt;&lt;/iframe&gt;</code> )</li>
+    </ol>
+    <h2>Nothing here, just some fake content to make you scroll</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
