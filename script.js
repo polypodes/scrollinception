@@ -1,1 +1,1 @@
-$.scrollinception();
+$('[data-scrollinception]').scrollinception();
